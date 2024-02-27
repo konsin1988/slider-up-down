@@ -1,6 +1,133 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  /* overflow: hidden; */
+}
+.container {
+  height: 100vh;
+  display: inline;
+}
+
+.container .sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  z-index: 1;
+}
+.container .sidebar .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sidebar div:nth-child(1) {
+  background-image: linear-gradient(
+    115deg,
+    #6f040c 10%,
+    #850d31 20%,
+    #e53720 60%,
+    #b0274c 80%,
+    #930f25 95%
+  );
+}
+.sidebar div:nth-child(2) {
+  background-image: linear-gradient(
+    70deg,
+    #112f12 10%,
+    #143918 20%,
+    #172411 50%,
+    #123513 90%
+  );
+  color: #fff;
+}
+.sidebar div:nth-child(3) {
+  background-image: linear-gradient(
+    140deg,
+    #cc4036 10%,
+    #c04840 20%,
+    #eac421 60%,
+    #df5e2d 80%,
+    #c04840 95%
+  );
+}
+.sidebar div:nth-child(4) {
+  background-image: linear-gradient(
+    70deg,
+    rgb(0, 14, 55) 5%,
+    #050d42 20%,
+    #042593 60%,
+    #0a2272 100%
+  );
+  color: #fff;
+}
+
+.container .images {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70vw;
+  z-index: 2;
+}
+.container .images div:nth-child(1) {
+  background-image: url(../img/hendrix.png);
+}
+.container .images div:nth-child(2) {
+  background-image: url(../img/behemoth.jpg);
+}
+.container .images div:nth-child(3) {
+  background-image: url(../img/darrel_yellow.jpeg);
+}
+.container .images div:nth-child(4) {
+  background-image: url(../img/slash_blue.jpg);
+}
+.container .images .img {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  height: 100vh;
+}
+.controls {
+  position: absolute;
+
+  top: 40%;
+  left: 28%;
+  height: 50px;
+  width: 50px;
+  z-index: 10;
+}
+.controls .down-button {
+  position: relative;
+  right: 50%;
+}
+.controls .up-button {
+  position: relative;
+  left: 50%;
+}
+
+.controls img {
+  padding: 6px;
+  height: 50px;
+  width: 50px;
+  background: rgba(158, 158, 179, 0.596);
+  border-radius: 5px;
+}
+.controls img:hover {
+  background: rgba(125, 125, 141, 0.5);
+}
+.controls img:active {
+  box-shadow: 0 0 10px #fff;
+  transform: scale(0.9);
 }
