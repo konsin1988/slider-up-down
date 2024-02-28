@@ -91,15 +91,19 @@ body {
 }
 .container .images div:nth-child(1) {
   background-image: url(../img/hendrix.png);
+  background-position: center;
 }
 .container .images div:nth-child(2) {
   background-image: url(../img/behemoth.jpg);
+  background-position: center;
 }
 .container .images div:nth-child(3) {
   background-image: url(../img/darrel_yellow.jpeg);
+  background-position: center;
 }
 .container .images div:nth-child(4) {
   background-image: url(../img/slash_blue.jpg);
+  background-position: center;
 }
 .container .images .img {
   background-size: cover;
@@ -159,3 +163,29 @@ body {
   box-shadow: 0 0 10px #fff;
   transform: scale(0.9s);
 }
+
+@-ms-viewport {
+  width: device-height;
+}
+
+/* @media screen and (orientation: portrait) {
+    meta {
+      content: "width=device-hight, height=device-width";
+    }
+    html {
+      transform: rotate(90deg);
+      transform-origin: center;
+    }
+  } */
+/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+} */
